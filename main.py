@@ -4,7 +4,7 @@ import streamlit as st
 
 
 def organize_files (working_dir):
-    working_dir.strip()
+    working_dir.strip('\n')
     st.write(f"Selected file path: {working_dir}")
 
     list_of_files = os.listdir(working_dir)
